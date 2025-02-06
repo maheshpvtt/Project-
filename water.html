@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+   
+    <title>Water Pollution Awareness</title>
+    <style>
+      
+        body {
+            background-color: #cce7ff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+     
+        header {
+            background-color: #004466;
+            color: white;
+            padding: 20px;
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+
+      
+        .container {
+            padding: 20px;
+        }
+
+        .info-box {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            width: 70%;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+     
+        .btn {
+            background: #0088cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #005577;
+        }
+
+     
+        footer {
+            background-color: #004466;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>Water Pollution Awareness</header>
+
+    <div class="container">
+        <div class="info-box">
+            <h2>What is Water Pollution?</h2>
+            <p>Water pollution occurs when harmful substances contaminate water bodies, making them unsafe for humans and aquatic life.</p>
+        </div>
+
+        <div class="info-box">
+            <h2>Causes of Water Pollution</h2>
+            <ul>
+                <li>Industrial Waste</li>
+                <li>Oil Spills</li>
+                <li>Plastic Pollution</li>
+                <li>Sewage and Wastewater</li>
+            </ul>
+        </div>
+
+        <div class="info-box">
+            <h2>How Can You Help?</h2>
+            <p>Click the button below to learn how to reduce water pollution.</p>
+            <button class="btn" onclick="showTips()">Click for Tips</button>
+            <p id="tips" style="display: none; margin-top: 10px;"></p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Water Pollution Awareness | Save Water, Save Life
+    </footer>
+
+    <script>
+        function showTips() {
+            document.getElementById("tips").style.display = "block";
+            document.getElementById("tips").innerHTML = 
+                "1. Reduce plastic use<br>" +
+                "2. Avoid dumping waste in water bodies<br>" +
+                "3. Use eco-friendly products<br>" +
+                "4. Participate in clean-up drives";
+        }
+    </script>
+
+</body>
+</html>
